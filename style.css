@@ -1,13 +1,37 @@
 .centered-container {
 	width: 1600px;
 	margin: 0 auto;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+  border-color: rgb(226, 225, 225);
 }
 
 
 header {
-	margin-top: 20px;
+	position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  background-color: white;
+  margin-top: 10px;
+  border-left: 1px solid black;
+	border-right: 1px solid black;
+  border-color: rgb(226, 225, 225);
 }
 
+main { 
+	position: relative;
+	z-index: 1;
+}
+
+footer {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.navigation {
+	width: 1600px;
+}
 
 .burger,
 .home,
@@ -55,6 +79,7 @@ li {
 .clearfix::before {
     content: "";
     display: table;
+    clear: both;
 }
 
 .clearfix::after {
@@ -109,6 +134,7 @@ li a: hover {
 .article {
 	width: 1125px;
 	margin: 0 auto;
+	margin-top: 121px;
 }
 
 .author-container {
@@ -128,12 +154,16 @@ li a: hover {
 	color: blue;
 }
 
+.newsfeed {
+	margin: 0;
+}
+
+
 .spacencosmos {
 	font-size: 13px;
 	font-weight: bolder;
 	border-top: 1px solid black;
 	padding-top: 10px;
-	margin-top: -18px;
 }
 
 h1 {
@@ -306,7 +336,7 @@ li {
 	font-size: 9px;
 }
 
-li:nth-child(2) {
+.science-times-container li:nth-child(2) {
 	border-right: 1px solid black;
 	border-left: 1px solid black;
 	border-color: rgb(226, 225, 225);
@@ -378,3 +408,210 @@ h3 {
   border-color: rgb(226, 225, 225); 
   font-size: 10px;
 }
+
+.station-pic-container a img {
+	width: 630px;
+}
+
+
+.more-n-trending-container {
+	width: 1125px;
+	margin: 0 auto;
+	position: relative;
+}	
+
+.more-container,
+.recommended-container {
+	display: block;
+	width: 60%;
+	float: left;
+	border-top: 1px solid black;
+  border-color: rgb(226, 225, 225);
+  margin-top: 50px;
+  padding-top: 10px;
+  word-wrap: break-word;
+}
+
+.trending-container {
+	width: 30%;
+	margin-left: 50px;
+	float: right;
+	position: absolute;
+  left: 720px;
+  word-wrap: break-word;
+}
+
+.more-container h3,
+.recommended-container h3 {
+	float: left;
+	margin: 0;
+}
+
+.hyperlink {
+	float: right;
+	font-size: 12px;
+}
+
+.hyperlink2 {
+	float: left;
+	font-size: 12px;
+}
+
+.more-container ul,
+.recommended-container ul {
+	display: inline-block;
+}
+
+.more {
+	width: 200px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.more span {
+	font-size: 14px;
+}
+
+
+.second,
+.fifth {
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.trending-list h2 {
+	font-size: 16px;
+}
+
+.trending-list span {
+	font-size: 14px;
+}
+
+.trending-list li {
+	margin-bottom: 10px;
+}
+
+
+.trending-title {
+	margin: 0;
+	font-size: 12px;
+	border-top: 1px solid black;
+  border-color: rgb(226, 225, 225);
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+
+.footer-head {
+	border-top: 5px solid black;
+  border-color: rgb(226, 225, 225);
+  padding-top: 10px;
+}
+
+.footer-head:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.footer-head .logo {
+	float: left;
+}
+
+.footer-head a {
+	float: right;
+	font-size: 12px;
+	color: blue;
+}
+
+.column {
+	width: 155px;
+	float: left;
+}
+
+.menu {
+	height: 445px;
+}
+
+.menu li {
+	display: block;
+	font-size: 13px;
+
+}
+
+.menu h4 {
+	font-size: 14px;
+}
+
+.menu ul {
+	line-height: 1.7;
+}
+
+.copyright {
+	border-top: 1px solid black;
+  border-color: rgb(226, 225, 225);
+  padding-top: 7px;
+}
+
+.copyright:before {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.copyright ul {
+	margin: 0;
+}
+
+.copyright li {
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+  border-color: rgb(226, 225, 225);
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.subscribe,
+.login {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 7px;
+	margin-right: 5px;
+	color: white;
+	background-color: rgb(98, 136, 165);
+}
+
+.cog {
+	background-color: white;
+	border: none;
+	margin-top: 4px;
+}
+
+.home,
+.search {
+	background-color: white;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 7px;
+}
+
+.burger {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: white;
+}
+
+.home:hover,
+.search:hover {
+	background-color: grey;
+}
+
+
